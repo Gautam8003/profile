@@ -1,0 +1,184 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    background: #f4f4f4;
+}
+
+nav {
+    background: #333;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 20px;
+    position: sticky;
+    top: 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.hero {
+    background: linear-gradient(to right, #4facfe, #00f2fe);
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.hero h1 {
+    font-size: 40px;
+}
+
+.section {
+    padding: 40px 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.skills {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.skill {
+    background: white;
+    padding: 20px;
+    flex: 1 1 200px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    text-align: center;
+    transition: 0.3s;
+}
+
+.skill:hover{
+    background: linear-gradient(to right, #4facfe, #00f2fe);
+    color: white;
+    transform: translateY(-5px);
+}
+
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px , 1fr));
+    gap: 20px;
+}
+
+.project {
+    height: 200px;
+    padding: 20px;
+    border-radius: 10px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition:transform 0.3s; 
+}
+
+
+#project1 {
+    background-image: url(assets/download.png);
+}
+
+#project2{
+    background-image: url(assets/youtube.png);
+
+}
+
+#project3{
+    background-image: url(assets/amazon.png);
+}
+
+
+.project:hover {
+    transform: scale(1.05);
+}
+
+
+.form-popup {
+    display: none;  /* IMPORTANT */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+    justify-content: center;
+    align-items: center;
+}
+
+.form-box {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 70%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: center;
+}
+
+
+.form-grp{
+    width: 70%;
+    height: 65px;
+    border-radius: 20px;
+    font-size: 22px;
+    justify-content: center;
+}
+
+.close-btn {
+    float: right;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+
+
+button {
+    background: #333;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background: #555;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #333;
+    color: white;
+    margin-top: 20px;
+}
+
+@media (max-width: 600px) {
+    .hero h1 {
+        font-size: 28px;
+    }
+}
+
