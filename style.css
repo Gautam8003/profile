@@ -66,20 +66,21 @@ nav a:hover {
     padding: 20px;
     flex: 1 1 200px;
     border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
     text-align: center;
     transition: 0.3s;
 }
 
-.skill:hover {
+.skill:hover{
     background: linear-gradient(to right, #4facfe, #00f2fe);
     color: white;
     transform: translateY(-5px);
 }
 
+
 .projects {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px , 1fr));
     gap: 20px;
 }
 
@@ -90,33 +91,37 @@ nav a:hover {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    transition: transform 0.3s;
+    transition:transform 0.3s; 
 }
+
 
 #project1 {
-    background-image: url(assets/clicks.png);
+    background-image: url("assets/clicks.png");
 }
 
-#project2 {
+#project2{
     background-image: url(assets/youtube.png);
+
 }
 
-#project3 {
+#project3{
     background-image: url(assets/amazon.png);
 }
+
 
 .project:hover {
     transform: scale(1.05);
 }
 
+
 .form-popup {
-    display: none;
+    display: none;  /* IMPORTANT */
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.6);
+    background: rgba(0,0,0,0.6);
     justify-content: center;
     align-items: center;
 }
@@ -133,8 +138,8 @@ nav a:hover {
     justify-content: center;
 }
 
-.form-grp {
-    display: flex;
+
+.form-grp{
     width: 70%;
     height: 65px;
     border-radius: 20px;
@@ -147,6 +152,8 @@ nav a:hover {
     cursor: pointer;
     font-size: 20px;
 }
+
+
 
 button {
     background: #333;
@@ -174,3 +181,4 @@ footer {
         font-size: 28px;
     }
 }
+
